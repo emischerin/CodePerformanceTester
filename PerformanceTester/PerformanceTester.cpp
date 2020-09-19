@@ -10,14 +10,20 @@
 int main()
 {
     TestExecutor te;
-    CountingSortNegNum snn;
+    CountingSortNegNum cs_neg_num;
+    CountingSortPosNum cs_pos_num;
    // CountingSortPosNum pnum_sort;
-    snn.InitData(100, 4, 1000);
-    snn.PrintData();
 
-    te.ExecImeasurement(snn);
+    for (int i = 0; i < 5; ++i) {
+        cs_neg_num.InitData(50, -100, 1000);
+        cs_pos_num.InitData(50, 100, 1100);
+        //snn.PrintData();
+        te.ExecImeasurement(cs_neg_num);
+        te.ExecImeasurement(cs_pos_num);
+    }
+    
 
-    snn.PrintSortedData();
+    //snn.PrintSortedData();
 
     te.PrintResults();
 

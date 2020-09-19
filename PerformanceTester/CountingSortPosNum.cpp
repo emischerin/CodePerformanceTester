@@ -33,6 +33,9 @@ void CountingSortPosNum::Execute()
 
 void CountingSortPosNum::InitData(unsigned int data_count, unsigned int min, unsigned int max)
 {
+	data.clear();
+	sorted_data.clear();
+
 	std::random_device rd;
 	std::mt19937 rne(rd());
 	std::uniform_int_distribution<int> uid(min, max);
