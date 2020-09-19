@@ -51,6 +51,8 @@ void CountingSortNegNum::Execute()
 
 void CountingSortNegNum::InitData(unsigned int data_count,int min,int max)
 {
+	if (max > 0) throw "Max > 0 exception!";
+
 	data.clear();
 	sorted_data.clear();
 

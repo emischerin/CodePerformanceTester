@@ -15,8 +15,13 @@ int main()
    // CountingSortPosNum pnum_sort;
 
     for (int i = 0; i < 5; ++i) {
-        cs_neg_num.InitData(50, -100, 1000);
-        cs_pos_num.InitData(50, 100, 1100);
+        try {
+            cs_neg_num.InitData(50, -1100, -100);
+            cs_pos_num.InitData(50, 100, 1100);
+        }
+        catch (std::string& exception) {
+            std::cout << exception << std::endl;
+        }
         //snn.PrintData();
         te.ExecImeasurement(cs_neg_num);
         te.ExecImeasurement(cs_pos_num);
