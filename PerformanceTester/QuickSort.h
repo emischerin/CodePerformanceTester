@@ -1,7 +1,8 @@
 #pragma once
 #include <vector>
+#include "IMeasurement.h"
 
-class QuickSort
+class QuickSort :public IMeasurement
 {
 public:
 	void Execute();
