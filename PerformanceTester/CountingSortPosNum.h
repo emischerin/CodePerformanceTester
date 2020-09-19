@@ -13,11 +13,12 @@ public:
 	void InitData(unsigned int data_count, unsigned int min, unsigned int max);
 	void PrintData();
 	void PrintSortedData();
-	unsigned int FindMax();
+	
 
 private:
 	
 	std::vector<unsigned int> data;
 	std::vector<unsigned int> sorted_data;
+	unsigned int FindMax();
 };
 
