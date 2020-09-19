@@ -1,0 +1,9 @@
+﻿  CountingSortUmap.cpp
+  Measurement.cpp
+  PerformanceTester.cpp
+  TestExecutor.cpp
+  Создание кода...
+PerformanceTester.obj : error LNK2001: неразрешенный внешний символ "public: virtual void __cdecl CountingSortUmap::Execute(void)" (?Execute@CountingSortUmap@@UEAAXXZ).
+PerformanceTester.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __cdecl CountingSortUmap::InitData(unsigned int,int,int)" (?InitData@CountingSortUmap@@QEAAXIHH@Z) в функции main.
+PerformanceTester.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __cdecl CountingSortUmap::PrintData(void)" (?PrintData@CountingSortUmap@@QEAAXXZ) в функции main.
+C:\Users\emisc\source\repos\PerformanceTester\x64\Debug\PerformanceTester.exe : fatal error LNK1120: неразрешенных внешних элементов: 3
