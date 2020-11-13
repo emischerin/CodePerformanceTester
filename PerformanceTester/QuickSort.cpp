@@ -73,7 +73,7 @@ void QuickSort::DoQuickSort(int low, int high)
 
 //int QuickSort::Partition(int low, int high)
 //{
-//	int max = v[high];
+//	int max = sorted_data[high];
 //	int i = low - 1;
 //
 //	for (int j = low; j < high; j++) {

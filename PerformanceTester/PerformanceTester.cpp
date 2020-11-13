@@ -14,33 +14,30 @@ int main()
     TestExecutor te;
     CountingSortNegNum cs_neg_num;
     CountingSortPosNum cs_pos_num;
-
     QuickSort qs;
-    qs.InitData(10, 10, 666);
-    qs.PrintData();
-    qs.PrintSortedData();
-    qs.Execute();
-    qs.PrintSortedData();
+    
 
-   // CountingSortPosNum pnum_sort;
+   
 
-    //for (int i = 0; i < 5; ++i) {
-    //    try {
-    //        cs_neg_num.InitData(50, -1100, -100);
-    //        cs_pos_num.InitData(50, 100, 1100);
-    //    }
-    //    catch (std::string& exception) {
-    //        std::cout << exception << std::endl;
-    //    }
-    //    //snn.PrintData();
-    //    te.ExecImeasurement(cs_neg_num);
-    //    te.ExecImeasurement(cs_pos_num);
-    //}
+    for (int i = 0; i < 5; ++i) {
+        try {
+            cs_neg_num.InitData(50, -1100, -100);
+            cs_pos_num.InitData(50, 100, 1100);
+            qs.InitData(50,-1100,1100);
+        }
+        catch (std::string& exception) {
+            std::cout << exception << std::endl;
+        }
+        //snn.PrintData();
+        te.ExecImeasurement(cs_neg_num);
+        te.ExecImeasurement(cs_pos_num);
+        te.ExecImeasurement(qs);
+    }
     
 
     //snn.PrintSortedData();
 
-    //te.PrintResults();
+    te.PrintResults();
 
    // pnum_sort.InitData(30000000, 0, 666);
    // pnum_sort.PrintData();
