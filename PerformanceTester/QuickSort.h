@@ -1,10 +1,15 @@
 #pragma once
 #include <vector>
+#include <random>
+#include <iostream>
 #include "IMeasurement.h"
 
 class QuickSort :public IMeasurement
 {
 public:
+
+	QuickSort();
+
 	void Execute();
 	void InitData(unsigned int data_count,int min,int max);
 	void PrintData();
@@ -13,9 +18,9 @@ private:
 	std::vector<int> data;
 	std::vector<int> sorted_data;
 
-	void Swap(int& a,int& b);
-	void DoQuickSort(std::vector<int>& v, int p, int r);
-	int Partition(std::vector<int>& v, int p, int r);
+	void Swap(int* a,int* b);
+	void DoQuickSort(int low, int high);
+	int Partition(int low, int high);
 
 
 };
