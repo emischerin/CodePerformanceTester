@@ -92,7 +92,7 @@ int QuickSort::Partition(int low, int high)
 	
 	int pivot = low;
 
-	for (size_t i = low; i < high; ++i) {
+	for (int i = low; i < high; ++i) {
 		if (sorted_data[i] <= sorted_data[high]) {
 			std::swap(sorted_data[pivot], sorted_data[i]);
 			pivot++;

@@ -1,5 +1,2 @@
 ﻿  PerformanceTester.cpp
-  QuickSort.cpp
-S:\VSProjects\PerformanceTester\PerformanceTester\QuickSort.cpp(95,25): warning C4018: <: несоответствие типов со знаком и без знака
-  Создание кода...
   PerformanceTester.vcxproj -> S:\VSProjects\PerformanceTester\Debug\PerformanceTester.exe

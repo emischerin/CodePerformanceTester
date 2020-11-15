@@ -7,7 +7,7 @@
 #include "CountingSortNegNum.h"
 #include "IMeasurement.h"
 #include "QuickSort.h"
-
+#include "BubbleSort.h"
 
 int main()
 {
@@ -15,7 +15,9 @@ int main()
     CountingSortNegNum cs_neg_num;
     CountingSortPosNum cs_pos_num;
     QuickSort qs;
-    
+    BubbleSort bs;
+
+  
 
    
 
@@ -24,6 +26,7 @@ int main()
             cs_neg_num.InitData(50, -1100, -100);
             cs_pos_num.InitData(50, 100, 1100);
             qs.InitData(50,-1100,1100);
+            bs.InitData(50, -1100, 1100);
         }
         catch (std::string& exception) {
             std::cout << exception << std::endl;
@@ -32,24 +35,14 @@ int main()
         te.ExecImeasurement(cs_neg_num);
         te.ExecImeasurement(cs_pos_num);
         te.ExecImeasurement(qs);
+        te.ExecImeasurement(bs);
     }
     
 
-    //snn.PrintSortedData();
+   
 
     te.PrintResults();
-
-   // pnum_sort.InitData(30000000, 0, 666);
-   // pnum_sort.PrintData();
-    /*umap_sort.InitData(15, -100, 100);
-    umap_sort.PrintData();*/
-
     
-
-   // pnum_sort.PrintSortedData();
-    //te.PrintResults();
-
-
 
     return 0;
 

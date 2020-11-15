@@ -139,18 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="CountingSortNegNum.cpp" />
     <ClCompile Include="CountingSortPosNum.cpp" />
-    <ClCompile Include="CountingSortUmap.cpp" />
     <ClCompile Include="Measurement.cpp" />
     <ClCompile Include="PerformanceTester.cpp" />
     <ClCompile Include="QuickSort.cpp" />
     <ClCompile Include="TestExecutor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="CountingSortNegNum.h" />
     <ClInclude Include="CountingSortPosNum.h" />
-    <ClInclude Include="CountingSortUmap.h" />
     <ClInclude Include="IMeasurement.h" />
     <ClInclude Include="Measurement.h" />
     <ClInclude Include="QuickSort.h" />
