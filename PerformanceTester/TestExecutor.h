@@ -10,7 +10,7 @@ class TestExecutor
 {
 public:
 	void ExecImeasurement(IMeasurement& im);
-	void PrintResults();
+	void PrintResults(); 
 
 private:
 	std::vector<Measurement> results;

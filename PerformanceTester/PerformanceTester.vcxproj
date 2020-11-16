@@ -143,6 +143,7 @@
     <ClCompile Include="CountingSortNegNum.cpp" />
     <ClCompile Include="CountingSortPosNum.cpp" />
     <ClCompile Include="Measurement.cpp" />
+    <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="PerformanceTester.cpp" />
     <ClCompile Include="QuickSort.cpp" />
     <ClCompile Include="TestExecutor.cpp" />
@@ -153,6 +154,7 @@
     <ClInclude Include="CountingSortPosNum.h" />
     <ClInclude Include="IMeasurement.h" />
     <ClInclude Include="Measurement.h" />
+    <ClInclude Include="MergeSort.h" />
     <ClInclude Include="QuickSort.h" />
     <ClInclude Include="TestExecutor.h" />
   </ItemGroup>

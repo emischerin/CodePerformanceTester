@@ -8,40 +8,47 @@
 #include "IMeasurement.h"
 #include "QuickSort.h"
 #include "BubbleSort.h"
+#include "MergeSort.h"
 
 int main()
 {
     TestExecutor te;
-    CountingSortNegNum cs_neg_num;
+    CountingSortNegNum cs_neg_num; 
     CountingSortPosNum cs_pos_num;
     QuickSort qs;
     BubbleSort bs;
+    MergeSort ms;
+
+    ms.InitData(10,-666,666);
+    ms.PrintData();
+    ms.Execute();
+    ms.PrintSortedData();
 
   
 
    
 
-    for (int i = 0; i < 5; ++i) {
-        try {
-            cs_neg_num.InitData(50, -1100, -100);
-            cs_pos_num.InitData(50, 100, 1100);
-            qs.InitData(50,-1100,1100);
-            bs.InitData(50, -1100, 1100);
-        }
-        catch (std::string& exception) {
-            std::cout << exception << std::endl;
-        }
-        //snn.PrintData();
-        te.ExecImeasurement(cs_neg_num);
-        te.ExecImeasurement(cs_pos_num);
-        te.ExecImeasurement(qs);
-        te.ExecImeasurement(bs);
-    }
-    
+    //for (int i = 0; i < 5; ++i) {
+    //    try {
+    //        cs_neg_num.InitData(50, -1100, -100);
+    //        cs_pos_num.InitData(50, 100, 1100);
+    //        qs.InitData(50,-1100,1100);
+    //        bs.InitData(50, -1100, 1100);
+    //    }
+    //    catch (std::string& exception) {
+    //        std::cout << exception << std::endl;
+    //    }
+    //    //snn.PrintData();
+    //    te.ExecImeasurement(cs_neg_num);
+    //    te.ExecImeasurement(cs_pos_num);
+    //    te.ExecImeasurement(qs);
+    //    te.ExecImeasurement(bs);
+    //}
+    //
 
    
 
-    te.PrintResults();
+    //te.PrintResults();
     
 
     return 0;
