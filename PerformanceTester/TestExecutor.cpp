@@ -34,3 +34,19 @@ void TestExecutor::PrintResults()
 
 	}
 }
+
+void TestExecutor::SortResultsByTag()
+{
+	if(results.size() > 0) 
+		std::sort(results.begin(), results.end(), SortByTag);
+}
+
+void TestExecutor::CalculateAverage()
+{
+
+}
+
+bool TestExecutor::SortByTag(const Measurement& first, const Measurement& second)
+{
+	 return first.tag < second.tag; 
+}
