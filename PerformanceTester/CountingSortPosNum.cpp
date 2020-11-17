@@ -29,7 +29,7 @@ void CountingSortPosNum::Execute()
 
 
 
-}
+} 
 
 void CountingSortPosNum::InitData(unsigned int data_count, unsigned int min, unsigned int max)
 {

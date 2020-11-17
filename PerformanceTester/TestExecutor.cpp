@@ -41,8 +41,42 @@ void TestExecutor::SortResultsByTag()
 		std::sort(results.begin(), results.end(), SortByTag);
 }
 
-void TestExecutor::CalculateAverage()
+void TestExecutor::PrintMeanResults()
 {
+	CalculateMeanValues();
+
+	for (auto i = average.begin(); i != average.end(); ++i) {
+		std::cout << "Mean Result======" << i->first << ":" << i->second.ns.count() << " nanoseconds" << std::endl;
+		std::cout << "Mean Result======" << i->first << ":" << i->second.ms.count() << " milliseconds" <<std::endl;
+	}
+}
+
+void TestExecutor::CalculateMeanValues()
+{
+	std::unordered_map<std::string, size_t> counts_by_tags;
+
+	CalculateMeasurementsCountByTag(counts_by_tags);
+
+	for (size_t i = 0; i < results.size(); ++i) {
+		average[results[i].tag].h += results[i].h;
+		average[results[i].tag].ms += results[i].ms;
+		average[results[i].tag].ns += results[i].ns;
+		average[results[i].tag].seconds += results[i].seconds;
+	}
+
+	for (auto i = average.begin(); i != average.end(); ++i) {
+		i->second.h = i->second.h / counts_by_tags[i->first];
+		i->second.ms = i->second.ms / counts_by_tags[i->first];
+		i->second.ns = i->second.ns / counts_by_tags[i->first];
+		i->second.seconds = i->second.seconds / counts_by_tags[i->first];
+	}
+}
+
+void TestExecutor::CalculateMeasurementsCountByTag(std::unordered_map<std::string, size_t>& counts_by_tag)
+{
+	for (size_t i = 0; i < results.size(); ++i) {
+		counts_by_tag[results[i].tag]++;
+	}
 
 }
 
