@@ -38,7 +38,7 @@ void MergeSort::InitData(unsigned int data_count, int min, int max)
 void MergeSort::PrintData()
 {
 	for (size_t i = 0; i < data.size(); ++i) {
-		std::cout << data[i] << " ";
+		std::cout << data[i] << " "; 
 	}
 
 	std::cout << std::endl;

@@ -146,6 +146,7 @@
     <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="PerformanceTester.cpp" />
     <ClCompile Include="QuickSort.cpp" />
+    <ClCompile Include="SedgewickMergeSort.cpp" />
     <ClCompile Include="TestExecutor.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +157,7 @@
     <ClInclude Include="Measurement.h" />
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="QuickSort.h" />
+    <ClInclude Include="SedgewickMergeSort.h" />
     <ClInclude Include="TestExecutor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

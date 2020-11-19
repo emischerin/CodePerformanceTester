@@ -9,6 +9,7 @@
 #include "QuickSort.h"
 #include "BubbleSort.h"
 #include "MergeSort.h"
+#include "SedgewickMergeSort.h"
 
 int main()
 {
@@ -19,15 +20,13 @@ int main()
     QuickSort qs;
     BubbleSort bs;
     MergeSort ms;
+    SedgewickMergeSort sms;
 
-    ms.InitData(1000, 0, 666);
-    te.ExecImeasurement(ms);
-    ms.InitData(1000, 0, 666);
-    te.ExecImeasurement(ms);
-
-    te.SortResultsByTag();
-    te.PrintResults();
-    te.PrintMeanResults();
+    sms.InitData(10, 0, 667);
+    sms.PrintData();
+    sms.Execute();
+    sms.PrintSortedData();
+    
     
 
   
