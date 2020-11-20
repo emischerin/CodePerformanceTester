@@ -82,7 +82,7 @@ void SedgewickMergeSort::Merge(int low, int mid, int high)
 
 }
 
-bool SedgewickMergeSort::Less(const int& a,const int& b)
+inline bool SedgewickMergeSort::Less(const int& a,const int& b)
 {
 	return a < b;
 }

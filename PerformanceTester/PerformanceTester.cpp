@@ -1,61 +1,15 @@
 ﻿// PerformanceTester.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
+#include "Application.h"
 
-#include <iostream>
-#include "TestExecutor.h"
-#include "CountingSortPosNum.h"
-#include "CountingSortNegNum.h"
-#include "IMeasurement.h"
-#include "QuickSort.h"
-#include "BubbleSort.h"
-#include "MergeSort.h"
-#include "SedgewickMergeSort.h"
 
 int main()
 {
-    size_t data_count = 100;
-    TestExecutor te;
-    CountingSortNegNum cs_neg_num; 
-    CountingSortPosNum cs_pos_num;
-    QuickSort qs;
-    BubbleSort bs;
-    MergeSort ms;
-    SedgewickMergeSort sms;
+       
+    Application app;
 
-    sms.InitData(10, 0, 667);
-    sms.PrintData();
-    sms.Execute();
-    sms.PrintSortedData();
+    app.RunAllTests(5, 100);
     
-    
-
-  
-
-   
-
-    //for (int i = 0; i < 5; ++i) {
-    //    try {
-    //        cs_neg_num.InitData(data_count, -1100, -100);
-    //        cs_pos_num.InitData(data_count, 100, 1100);
-    //        qs.InitData(data_count,-1100,1100);
-    //        bs.InitData(data_count, -1100, 1100);
-    //        ms.InitData(data_count, -1100, 1100);
-    //    }
-    //    catch (std::string& exception) {
-    //        std::cout << exception << std::endl;
-    //    }
-    //    //snn.PrintData();
-    //    te.ExecImeasurement(cs_neg_num);
-    //    te.ExecImeasurement(cs_pos_num);
-    //    te.ExecImeasurement(qs);
-    //    te.ExecImeasurement(bs);
-    //    te.ExecImeasurement(ms);
-    //}
-    //
-
-   
-    //te.SortResultsByTag();
-    //te.PrintResults();
     
 
     return 0;
