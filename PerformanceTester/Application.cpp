@@ -87,3 +87,12 @@ void Application::RunSedgewickMergeSortTest()
     smss.Execute();
     smss.PrintSortedData();
 }
+
+void Application::RunOptimizedMergeSortTest()
+{
+    OptimizedMergeSort oms;
+    oms.InitData(10, -100, 100);
+    oms.PrintData();
+    oms.Execute();
+    oms.PrintSortedData();
+}

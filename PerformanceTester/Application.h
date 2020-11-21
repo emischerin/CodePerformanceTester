@@ -8,6 +8,7 @@
 #include "BubbleSort.h"
 #include "MergeSort.h"
 #include "SedgewickMergeSort.h"
+#include "OptimizedMergeSort.h"
 
 class Application
 {
@@ -26,6 +27,7 @@ public:
 
     void RunSedgewickMergeSortTest();
 
+    void RunOptimizedMergeSortTest();
 
 
 private:
@@ -36,5 +38,6 @@ private:
     BubbleSort bs;
     MergeSort ms;
     SedgewickMergeSort sms;
+    OptimizedMergeSort oms;
 };
 

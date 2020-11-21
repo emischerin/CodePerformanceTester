@@ -5,7 +5,7 @@
 
 OptimizedMergeSort::OptimizedMergeSort()
 {
-	this->tag = "MergeSort";
+	this->tag = "OptimizedMergeSort";
 }
 
 void OptimizedMergeSort::Execute()
@@ -23,6 +23,7 @@ void OptimizedMergeSort::InitData(unsigned int data_count, int min, int max)
 
 	data.resize(data_count);
 	sorted_data.resize(data_count);
+	tmp.resize(data_count);
 
 	std::random_device rd;
 	std::mt19937 rne(rd());
@@ -74,30 +75,21 @@ void OptimizedMergeSort::Merge(int low, int mid, int high)
 	int counter1 = 0;
 	int counter2 = 0;
 	int counter_merged = low;
+	
 
-
-	std::vector<int> v1(size1);
-	std::vector<int> v2(size2);
-
-	for (int i = 0; i < size1; ++i) {
-		v1[i] = sorted_data[i + low];
-	}
-
-	for (int i = 0; i < size2; ++i) {
-		v2[i] = sorted_data[i + mid + 1];
-	}
+	for (int i = low; i <= high; ++i) tmp[i] = sorted_data[i];
 
 	while ((counter1 < size1) && (counter2 < size2)) {
-		if (v1[counter1] <= v2[counter2]) {
-			sorted_data[counter_merged++] = v1[counter1++];
+		if (tmp[counter1] <= tmp[counter2]) {
+			sorted_data[counter_merged++] = tmp[counter1++];
 		}
 		else {
-			sorted_data[counter_merged++] = v2[counter2++];
+			sorted_data[counter_merged++] = tmp[counter2++];
 		}
 	}
 
-	while (counter1 < size1) sorted_data[counter_merged++] = v1[counter1++];
-	while (counter2 < size2) sorted_data[counter_merged++] = v2[counter2++];
+	while (counter1 < size1) sorted_data[counter_merged++] = tmp[counter1++];
+	while (counter2 < size2) sorted_data[counter_merged++] = tmp[counter2++];
 
 
 }
