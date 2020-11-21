@@ -8,8 +8,8 @@ int main()
        
     Application app;
 
-    //app.RunAllTests(5, 100);
-    app.RunOptimizedMergeSortTest();
+    app.RunAllTests(5, 100);
+    //app.RunOptimizedMergeSortTest();
     
     
 
