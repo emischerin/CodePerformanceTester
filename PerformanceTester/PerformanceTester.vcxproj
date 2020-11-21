@@ -145,6 +145,7 @@
     <ClCompile Include="CountingSortPosNum.cpp" />
     <ClCompile Include="Measurement.cpp" />
     <ClCompile Include="MergeSort.cpp" />
+    <ClCompile Include="OptimizedMergeSort.cpp" />
     <ClCompile Include="PerformanceTester.cpp" />
     <ClCompile Include="QuickSort.cpp" />
     <ClCompile Include="SedgewickMergeSort.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="IMeasurement.h" />
     <ClInclude Include="Measurement.h" />
     <ClInclude Include="MergeSort.h" />
+    <ClInclude Include="OptimizedMergeSort.h" />
     <ClInclude Include="QuickSort.h" />
     <ClInclude Include="SedgewickMergeSort.h" />
     <ClInclude Include="TestExecutor.h" />

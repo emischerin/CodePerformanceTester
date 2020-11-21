@@ -70,26 +70,30 @@ void OptimizedMergeSort::DoMergeSort(int low, int high)
 
 void OptimizedMergeSort::Merge(int low, int mid, int high)
 {
-	int size1 = (mid - low) + 1;
-	int size2 = high - mid;
-	int counter1 = 0;
-	int counter2 = 0;
-	int counter_merged = low;
+	int l = low;
+	int m = mid + 1;
+	int pos = low;
 	
 
 	for (int i = low; i <= high; ++i) tmp[i] = sorted_data[i];
 
-	while ((counter1 < size1) && (counter2 < size2)) {
-		if (tmp[counter1] <= tmp[counter2]) {
-			sorted_data[counter_merged++] = tmp[counter1++];
+
+	//for (int i = low; i <= high; ++i) {
+	//	if (tmp[l] <= tmp[m]) sorted_data[i] = tmp[l++];
+	//}
+
+
+	while ((l <= mid) && (m <= high)) {
+		if (tmp[l] <= tmp[m]) {
+			sorted_data[pos++] = tmp[l++];
 		}
 		else {
-			sorted_data[counter_merged++] = tmp[counter2++];
+			sorted_data[pos++] = tmp[m++];
 		}
 	}
 
-	while (counter1 < size1) sorted_data[counter_merged++] = tmp[counter1++];
-	while (counter2 < size2) sorted_data[counter_merged++] = tmp[counter2++];
+	while (l <= mid) sorted_data[pos++] = tmp[l++];
+	while (m <= high) sorted_data[pos++] = tmp[m++];
 
 
 }
