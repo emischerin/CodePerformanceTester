@@ -8,18 +8,19 @@ void Application::RunAllTests(size_t tests_num,size_t data_count)
      cs_neg_num.InitData(data_count, -1100, -100);
      cs_pos_num.InitData(data_count, 100, 1100);
      qs.InitData(data_count, -1100, 1100);
-     bs.InitData(data_count, -1100, 1100);
+     //bs.InitData(data_count, -1100, 1100);
      ms.InitData(data_count, -1100, 1100);
      sms.InitData(data_count, -1100, 1100);
-        
+     oms.InitData(data_count, -1100, 1100);
        
         //snn.PrintData();
         te.ExecImeasurement(cs_neg_num);
         te.ExecImeasurement(cs_pos_num);
         te.ExecImeasurement(qs);
-        te.ExecImeasurement(bs);
+        //te.ExecImeasurement(bs);
         te.ExecImeasurement(ms);
         te.ExecImeasurement(sms);
+        te.ExecImeasurement(oms);
     }
 
 
