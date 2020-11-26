@@ -12,7 +12,9 @@ int main()
     //app.RunOptimizedMergeSortTest();
     //app.RunBestNElementsTest();
 
-    app.RunBestNAllIntTest();
+    //app.RunBestNAllIntTest();
+
+    app.RunBestNStlSortTest();
     
     
 

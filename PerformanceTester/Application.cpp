@@ -117,3 +117,14 @@ void Application::RunBestNAllIntTest()
     b_allint.Execute();
     b_allint.PrintResult();
 }
+
+void Application::RunBestNStlSortTest()
+{
+    BestNStlSort b_stl_sort(4);
+    b_stl_sort.InitData(15, -15, 15);
+    b_stl_sort.PrintData();
+    b_stl_sort.Execute();
+    b_stl_sort.PrintSortedData();
+    b_stl_sort.PrintResult();
+    
+}

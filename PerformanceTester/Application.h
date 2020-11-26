@@ -11,6 +11,7 @@
 #include "OptimizedMergeSort.h"
 #include "BestNElements.h"
 #include "BestNAllInt.h"
+#include "BestNStlSort.h"
 
 class Application
 {
@@ -34,6 +35,8 @@ public:
     void RunBestNElementsTest();
 
     void RunBestNAllIntTest();
+
+    void RunBestNStlSortTest();
 
 private:
     TestExecutor te;
