@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="BestNAllInt.cpp" />
     <ClCompile Include="BestNElements.cpp" />
     <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="CountingSortNegNum.cpp" />
@@ -154,6 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="BestNAllInt.h" />
     <ClInclude Include="BestNElements.h" />
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="CountingSortNegNum.h" />

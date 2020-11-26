@@ -10,7 +10,9 @@ int main()
 
    // app.RunAllTests(5, 10000);
     //app.RunOptimizedMergeSortTest();
-    app.RunBestNElementsTest();
+    //app.RunBestNElementsTest();
+
+    app.RunBestNAllIntTest();
     
     
 

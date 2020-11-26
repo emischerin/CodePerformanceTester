@@ -17,7 +17,7 @@ public:
 	void PrintData();
 	void PrintResult();
 private:
-	size_t best_count;
+	size_t best_count; 
 	std::vector<size_t> data;
 	std::vector<size_t> result;
 

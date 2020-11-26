@@ -107,3 +107,13 @@ void Application::RunBestNElementsTest()
     b_elements.Execute();
     b_elements.PrintResult();
 }
+
+void Application::RunBestNAllIntTest()
+{
+    BestNAllInt b_allint(5);
+
+    b_allint.InitData(1000, -1000, 1000);
+    b_allint.PrintData();
+    b_allint.Execute();
+    b_allint.PrintResult();
+}

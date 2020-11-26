@@ -10,6 +10,7 @@
 #include "SedgewickMergeSort.h"
 #include "OptimizedMergeSort.h"
 #include "BestNElements.h"
+#include "BestNAllInt.h"
 
 class Application
 {
@@ -31,6 +32,8 @@ public:
     void RunOptimizedMergeSortTest();
 
     void RunBestNElementsTest();
+
+    void RunBestNAllIntTest();
 
 private:
     TestExecutor te;
