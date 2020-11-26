@@ -97,3 +97,13 @@ void Application::RunOptimizedMergeSortTest()
     oms.Execute();
     oms.PrintSortedData();
 }
+
+void Application::RunBestNElementsTest()
+{
+    BestNElements b_elements(4);
+
+    b_elements.InitData(10,0,20);
+    b_elements.PrintData();
+    b_elements.Execute();
+    b_elements.PrintResult();
+}
