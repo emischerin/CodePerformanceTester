@@ -1,6 +1,6 @@
 #include "Application.h"
 
-void Application::RunAllTests(size_t tests_num,size_t data_count)
+void Application::RunAllSortingTests(size_t tests_num,size_t data_count)
 {
 
     for (size_t i = 0; i != tests_num; ++i) {
@@ -127,4 +127,41 @@ void Application::RunBestNStlSortTest()
     b_stl_sort.PrintSortedData();
     b_stl_sort.PrintResult();
     
+}
+
+void Application::RunBestNRandSelectTest()
+{
+    BestNRandSelect b_rand_select(4);
+
+    b_rand_select.InitData(15, -15, 15);
+    b_rand_select.PrintData();
+    b_rand_select.Execute();
+    b_rand_select.PrintResult();
+
+
+
+}
+
+void Application::RunAllBestNElementsTests(size_t tests_count, size_t data_count,size_t best_count)
+{
+    BestNElements b_elements(best_count);
+    BestNAllInt b_allint(best_count);
+    BestNStlSort b_stl_sort(best_count);
+    BestNRandSelect b_rand_select(best_count);
+
+    for (size_t i = 0; i < tests_count; ++i) {
+        b_elements.InitData(data_count, 0, 1000000);
+        b_allint.InitData(data_count, -1000000, 1000000);
+        b_stl_sort.InitData(data_count, -1000000, 1000000);
+        b_rand_select.InitData(data_count, -1000000, 1000000);
+
+        te.ExecImeasurement(b_elements);
+        te.ExecImeasurement(b_allint);
+        te.ExecImeasurement(b_stl_sort);
+        te.ExecImeasurement(b_rand_select);
+    }
+
+    te.SortResultsByTag();
+    te.PrintResults();
+
 }

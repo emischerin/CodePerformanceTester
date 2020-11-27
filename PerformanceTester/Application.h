@@ -12,11 +12,12 @@
 #include "BestNElements.h"
 #include "BestNAllInt.h"
 #include "BestNStlSort.h"
+#include "BestNRandSelect.h"
 
 class Application
 {
 public:
-	void RunAllTests(size_t tests_num,size_t data_count);
+	void RunAllSortingTests(size_t tests_num,size_t data_count);
 
     void RunCountingSortNegNumTest();
 
@@ -38,8 +39,16 @@ public:
 
     void RunBestNStlSortTest();
 
+    void RunBestNRandSelectTest();
+
+    void RunAllBestNElementsTests(size_t tests_count,size_t data_count,size_t best_count);
+
 private:
+
+    
     TestExecutor te;
+
+    /* SORTING*/
     CountingSortNegNum cs_neg_num;
     CountingSortPosNum cs_pos_num;
     QuickSort qs;
@@ -47,5 +56,10 @@ private:
     MergeSort ms;
     SedgewickMergeSort sms;
     OptimizedMergeSort oms;
+
+    /* SELECTING LARGEST OR SMALLEST ELEMENTS*/
+
+    
+
 };
 

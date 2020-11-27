@@ -17,6 +17,7 @@ void BestNStlSort::InitData(unsigned int data_count, int min, int max)
 		throw("Number of best elements could not be more than number of all elements");
 
 	data.clear();
+	sorted_data.clear();
 	result.clear();
 
 	int random_int;

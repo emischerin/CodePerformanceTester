@@ -7,14 +7,9 @@ int main()
 {
        
     Application app;
+     
 
-   // app.RunAllTests(5, 10000);
-    //app.RunOptimizedMergeSortTest();
-    //app.RunBestNElementsTest();
-
-    //app.RunBestNAllIntTest();
-
-    app.RunBestNStlSortTest();
+    app.RunAllBestNElementsTests(5, 1000000, 10);
     
     
 

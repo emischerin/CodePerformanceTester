@@ -142,6 +142,7 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="BestNAllInt.cpp" />
     <ClCompile Include="BestNElements.cpp" />
+    <ClCompile Include="BestNRandSelect.cpp" />
     <ClCompile Include="BestNStlSort.cpp" />
     <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="CountingSortNegNum.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="BestNAllInt.h" />
     <ClInclude Include="BestNElements.h" />
+    <ClInclude Include="BestNRandSelect.h" />
     <ClInclude Include="BestNStlSort.h" />
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="CountingSortNegNum.h" />

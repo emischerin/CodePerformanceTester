@@ -2,7 +2,7 @@
 
 BestNAllInt::BestNAllInt(size_t best_count)
 {
-	this->tag = "BestNElements(CountingSortBased)";
+	this->tag = "BestN All Ints Elements(CountingSortBased)";
 	this->best_count = best_count;
 }
 

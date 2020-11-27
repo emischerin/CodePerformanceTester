@@ -2,7 +2,7 @@
 
 BestNElements::BestNElements(size_t best_count)
 {
-	this->tag = "BestNElements(CountingSortBased)";
+	this->tag = "BestNElements(Positive Only)";
 	this->best_count = best_count;
 }
 
