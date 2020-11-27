@@ -31,6 +31,9 @@ void TestExecutor::PrintResults()
 		std::cout << results[i].tag
 			<< ":" << "nanoseconds=" << 
 			results[i].ns.count() << std::endl;
+		std::cout << results[i].tag
+			<< ":" << "seconds=" <<
+			results[i].seconds.count() << std::endl;
 
 	}
 }
