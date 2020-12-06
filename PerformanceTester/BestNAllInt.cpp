@@ -142,7 +142,7 @@ void BestNAllInt::BestElements()
 		return;
 	}
 	else if (positive_size < this->best_count) {
-		SelectBestPositiveElements(positives, this->best_count);
+		SelectBestPositiveElements(positives, this->best_count); 
 		SelectBestNegativeElements(negatives, this->best_count - positive_size);
 
 	}

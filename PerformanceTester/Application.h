@@ -13,6 +13,7 @@
 #include "BestNAllInt.h"
 #include "BestNStlSort.h"
 #include "BestNRandSelect.h"
+#include "BestNstlNth.h"
 
 class Application
 {
@@ -40,6 +41,8 @@ public:
     void RunBestNStlSortTest();
 
     void RunBestNRandSelectTest();
+
+    void RunBestNstdNthTest();
 
     void RunAllBestNElementsTests(size_t tests_count,size_t data_count,size_t best_count);
 
