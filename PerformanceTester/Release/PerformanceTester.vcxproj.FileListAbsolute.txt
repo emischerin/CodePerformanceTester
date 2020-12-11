@@ -1,0 +1,2 @@
+S:\VSProjects\PerformanceTester\Release\PerformanceTester.exe.lastcodeanalysissucceeded
+S:\VSProjects\PerformanceTester\PerformanceTester\Release\NativeCodeAnalysis.read.1.tlog
