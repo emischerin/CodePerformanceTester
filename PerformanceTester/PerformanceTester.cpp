@@ -10,7 +10,7 @@ int main()
      
 
     app.RunAllBestNElementsTests(5, 1000000, 10);
-    
+    app.RunAllSortingTests(5, 1000000);
     
     
 

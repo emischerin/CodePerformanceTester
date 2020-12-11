@@ -1,4 +1,1 @@
-﻿  Application.cpp
-  PerformanceTester.cpp
-  Создание кода...
-  PerformanceTester.vcxproj -> S:\VSProjects\PerformanceTester\Debug\PerformanceTester.exe
+﻿cl : командная строка error D8016: несовместимые параметры командной строки "/ZI" и "/GL"

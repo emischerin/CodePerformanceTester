@@ -124,7 +124,7 @@ inline void BestNAllInt::SelectBestNegativeElements(std::vector<int>& v,int elem
 
 
 
-void BestNAllInt::BestElements()
+inline void BestNAllInt::BestElements()
 {
 	std::vector<int> negatives;
 	std::vector<int> positives;
