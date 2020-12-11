@@ -13,105 +13,114 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="SortingAlgorthms">
+      <UniqueIdentifier>{c84da465-dba2-49e6-a328-fd05cfbeeb43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IOrderStatAlgorithms">
+      <UniqueIdentifier>{3b02a26f-7358-41aa-9563-a9cc1eac40e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{0dc8b826-31c1-46bc-9ac7-0815fdc873f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PerformanceTester.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Measurement.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="TestExecutor.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="CountingSortPosNum.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="BubbleSort.cpp">
+      <Filter>SortingAlgorthms</Filter>
     </ClCompile>
     <ClCompile Include="CountingSortNegNum.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>SortingAlgorthms</Filter>
     </ClCompile>
-    <ClCompile Include="QuickSort.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="BubbleSort.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="CountingSortPosNum.cpp">
+      <Filter>SortingAlgorthms</Filter>
     </ClCompile>
     <ClCompile Include="MergeSort.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="SedgewickMergeSort.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Application.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>SortingAlgorthms</Filter>
     </ClCompile>
     <ClCompile Include="OptimizedMergeSort.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>SortingAlgorthms</Filter>
     </ClCompile>
-    <ClCompile Include="BestNElements.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="QuickSort.cpp">
+      <Filter>SortingAlgorthms</Filter>
+    </ClCompile>
+    <ClCompile Include="SedgewickMergeSort.cpp">
+      <Filter>SortingAlgorthms</Filter>
     </ClCompile>
     <ClCompile Include="BestNAllInt.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>IOrderStatAlgorithms</Filter>
     </ClCompile>
-    <ClCompile Include="BestNStlSort.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="BestNElements.cpp">
+      <Filter>IOrderStatAlgorithms</Filter>
     </ClCompile>
     <ClCompile Include="BestNRandSelect.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>IOrderStatAlgorithms</Filter>
     </ClCompile>
     <ClCompile Include="BestNstlNth.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>IOrderStatAlgorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="BestNStlSort.cpp">
+      <Filter>IOrderStatAlgorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Measurement.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="PerformanceTester.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="TestExecutor.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IMeasurement.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Measurement.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="TestExecutor.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="CountingSortPosNum.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="BubbleSort.h">
+      <Filter>SortingAlgorthms</Filter>
     </ClInclude>
     <ClInclude Include="CountingSortNegNum.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>SortingAlgorthms</Filter>
     </ClInclude>
-    <ClInclude Include="QuickSort.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="BubbleSort.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="CountingSortPosNum.h">
+      <Filter>SortingAlgorthms</Filter>
     </ClInclude>
     <ClInclude Include="MergeSort.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="SedgewickMergeSort.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Application.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>SortingAlgorthms</Filter>
     </ClInclude>
     <ClInclude Include="OptimizedMergeSort.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>SortingAlgorthms</Filter>
     </ClInclude>
-    <ClInclude Include="BestNElements.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="QuickSort.h">
+      <Filter>SortingAlgorthms</Filter>
+    </ClInclude>
+    <ClInclude Include="SedgewickMergeSort.h">
+      <Filter>SortingAlgorthms</Filter>
     </ClInclude>
     <ClInclude Include="BestNAllInt.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>IOrderStatAlgorithms</Filter>
     </ClInclude>
-    <ClInclude Include="BestNStlSort.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="BestNElements.h">
+      <Filter>IOrderStatAlgorithms</Filter>
     </ClInclude>
     <ClInclude Include="BestNRandSelect.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>IOrderStatAlgorithms</Filter>
     </ClInclude>
     <ClInclude Include="BestNstlNth.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>IOrderStatAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="BestNStlSort.h">
+      <Filter>IOrderStatAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IMeasurement.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Measurement.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TestExecutor.h">
+      <Filter>Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
