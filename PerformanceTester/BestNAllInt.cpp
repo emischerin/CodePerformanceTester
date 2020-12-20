@@ -8,7 +8,7 @@ BestNAllInt::BestNAllInt(size_t best_count)
 
 void BestNAllInt::Execute()
 {
-	this->BestElements();
+	this->Sort();
 }
 
 void BestNAllInt::InitData(unsigned int data_count,int min,int max)
@@ -124,7 +124,7 @@ inline void BestNAllInt::SelectBestNegativeElements(std::vector<int>& v,int elem
 
 
 
-inline void BestNAllInt::BestElements()
+inline void BestNAllInt::Sort()
 {
 	std::vector<int> negatives;
 	std::vector<int> positives;

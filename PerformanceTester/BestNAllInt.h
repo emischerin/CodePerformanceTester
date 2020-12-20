@@ -27,6 +27,6 @@ private:
 	void SelectBestNegativeElements(std::vector<int>& v, int elem_count);
 		
 
-	void BestElements();
+	void Sort();
 };
 

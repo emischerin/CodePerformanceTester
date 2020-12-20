@@ -1,23 +1,10 @@
 ﻿  Application.cpp
   BestNAllInt.cpp
-  BestNElements.cpp
   BestNRandSelect.cpp
-  BestNstlNth.cpp
-  BestNStlSort.cpp
-  BubbleSort.cpp
-  CountingSortAllInt.cpp
-  CountingSortNegNum.cpp
-  CountingSortPosNum.cpp
-  Measurement.cpp
-  MergeSort.cpp
-  OptimizedMergeSort.cpp
   PerformanceTester.cpp
-  QuickSort.cpp
-  SedgewickMergeSort.cpp
-  TestExecutor.cpp
   Создание кода
-  18 of 606 functions ( 3.0%) were compiled, the rest were copied from previous compilation.
-    10 functions were new in current compilation
-    61 functions had inline decision re-evaluated but remain unchanged
+  2 of 606 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   PerformanceTester.vcxproj -> S:\VSProjects\PerformanceTester\Release\PerformanceTester.exe
