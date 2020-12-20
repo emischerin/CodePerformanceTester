@@ -27,8 +27,8 @@ void Application::RunAllSortingTests(size_t tests_num,size_t data_count)
 
 
 
-    te.SortResultsByTag();
-    te.PrintResults();
+  
+    
 }
 
 
@@ -190,7 +190,13 @@ void Application::RunAllBestNElementsTests(size_t tests_count, size_t data_count
         te.ExecImeasurement(b_allint);
     }
 
+  
+   
+
+}
+
+void Application::PrintResultsToConsole()
+{
     te.SortResultsByTag();
     te.PrintResults();
-
 }

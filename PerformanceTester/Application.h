@@ -49,6 +49,8 @@ public:
 
     void RunAllBestNElementsTests(size_t tests_count,size_t data_count,size_t best_count);
 
+    void PrintResultsToConsole();
+
 private:
 
     

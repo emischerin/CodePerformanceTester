@@ -1,10 +1,8 @@
 ﻿  Application.cpp
-  BestNAllInt.cpp
-  BestNRandSelect.cpp
   PerformanceTester.cpp
   Создание кода
-  2 of 606 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+  6 of 607 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
+  Создание кода завершено
     1 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
-  Создание кода завершено
   PerformanceTester.vcxproj -> S:\VSProjects\PerformanceTester\Release\PerformanceTester.exe
