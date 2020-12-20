@@ -12,6 +12,7 @@ void Application::RunAllSortingTests(size_t tests_num,size_t data_count)
      ms.InitData(data_count, -1100, 1100);
      sms.InitData(data_count, -1100, 1100);
      oms.InitData(data_count, -1100, 1100);
+     cs_all_int.InitData(data_count, -5000, 5000);
        
         //snn.PrintData();
         te.ExecImeasurement(cs_neg_num);
@@ -21,6 +22,7 @@ void Application::RunAllSortingTests(size_t tests_num,size_t data_count)
         te.ExecImeasurement(ms);
         te.ExecImeasurement(sms);
         te.ExecImeasurement(oms);
+        te.ExecImeasurement(cs_all_int);
     }
 
 
@@ -47,6 +49,16 @@ void Application::RunCountingSortPosNumTest()
     cspn.InitData(10, 100, 200);
     cspn.Execute();
     cspn.PrintSortedData();
+}
+
+void Application::RunCountingSortAllIntTest()
+{
+    CountingSortAllInt cs_all_int;
+
+    cs_all_int.InitData(10, -100, 100);
+    cs_all_int.PrintData();
+    cs_all_int.Execute();
+    cs_all_int.PrintSortedData();
 }
 
 void Application::RunQuickSortTest()

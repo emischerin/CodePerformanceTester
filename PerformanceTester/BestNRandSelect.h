@@ -9,13 +9,13 @@
 class BestNRandSelect:public IMeasurement
 {
 public:
-	BestNRandSelect(size_t best_count);
+	BestNRandSelect(int best_count);
 	void Execute() override;
-	void InitData(unsigned int data_count, int min, int max);
+	void InitData(int data_count, int min, int max);
 	void PrintData();
 	void PrintResult();
 private:
-	size_t best_count;
+	int best_count;
 	std::vector<int> data;
 	std::vector<int> result;
 

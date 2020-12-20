@@ -2,10 +2,10 @@
   BestNAllInt.cpp
   BestNElements.cpp
   BestNRandSelect.cpp
-S:\VSProjects\PerformanceTester\PerformanceTester\BestNRandSelect.cpp(110,16): warning C4018: <=: несоответствие типов со знаком и без знака
   BestNstlNth.cpp
   BestNStlSort.cpp
   BubbleSort.cpp
+  CountingSortAllInt.cpp
   CountingSortNegNum.cpp
   CountingSortPosNum.cpp
   Measurement.cpp
@@ -15,10 +15,9 @@ S:\VSProjects\PerformanceTester\PerformanceTester\BestNRandSelect.cpp(110,16): w
   QuickSort.cpp
   SedgewickMergeSort.cpp
   TestExecutor.cpp
-  Выполнение Code Analysis для C/C++...
   Создание кода
-  Previous IPDB not found, fall back to full compilation.
-  All 598 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  18 of 606 functions ( 3.0%) were compiled, the rest were copied from previous compilation.
+    10 functions were new in current compilation
+    61 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   PerformanceTester.vcxproj -> S:\VSProjects\PerformanceTester\Release\PerformanceTester.exe
-S:\VSProjects\PerformanceTester\PerformanceTester\Measurement.h(13): warning C26495: Переменная "Measurement::ns" не инициализирована. Всегда инициализируйте переменную-член (type.6).

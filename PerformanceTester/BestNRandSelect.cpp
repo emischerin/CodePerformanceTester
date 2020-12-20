@@ -1,6 +1,6 @@
 #include "BestNRandSelect.h"
 
-BestNRandSelect::BestNRandSelect(size_t best_count)
+BestNRandSelect::BestNRandSelect(int best_count)
 {
 	this->tag = "Best N Randomized Select";
 	this->best_count = best_count;
@@ -11,7 +11,7 @@ void BestNRandSelect::Execute()
 	this->SelectBestN();
 }
 
-void BestNRandSelect::InitData(unsigned int data_count, int min, int max)
+void BestNRandSelect::InitData(int data_count, int min, int max)
 {
 	if (data_count < best_count)
 		throw("Number of best elements could not be more than number of all elements");
@@ -26,7 +26,7 @@ void BestNRandSelect::InitData(unsigned int data_count, int min, int max)
 
 
 
-	for (unsigned int i = 0; i < data_count; ++i) {
+	for (int i = 0; i < data_count; ++i) {
 		random_int = uid(rne);
 		data.push_back(random_int);
 		

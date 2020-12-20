@@ -72,6 +72,9 @@
     <ClCompile Include="TestExecutor.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="CountingSortAllInt.cpp">
+      <Filter>SortingAlgorthms</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BubbleSort.h">
@@ -121,6 +124,9 @@
     </ClInclude>
     <ClInclude Include="TestExecutor.h">
       <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CountingSortAllInt.h">
+      <Filter>SortingAlgorthms</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

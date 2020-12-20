@@ -89,11 +89,11 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ShowIncludes>true</ShowIncludes>
-      <OmitDefaultLibName>true</OmitDefaultLibName>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,6 +152,7 @@
     <ClCompile Include="BestNstlNth.cpp" />
     <ClCompile Include="BestNStlSort.cpp" />
     <ClCompile Include="BubbleSort.cpp" />
+    <ClCompile Include="CountingSortAllInt.cpp" />
     <ClCompile Include="CountingSortNegNum.cpp" />
     <ClCompile Include="CountingSortPosNum.cpp" />
     <ClCompile Include="Measurement.cpp" />
@@ -170,6 +171,7 @@
     <ClInclude Include="BestNstlNth.h" />
     <ClInclude Include="BestNStlSort.h" />
     <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="CountingSortAllInt.h" />
     <ClInclude Include="CountingSortNegNum.h" />
     <ClInclude Include="CountingSortPosNum.h" />
     <ClInclude Include="IMeasurement.h" />

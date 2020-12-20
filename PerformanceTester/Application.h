@@ -9,6 +9,7 @@
 #include "MergeSort.h"
 #include "SedgewickMergeSort.h"
 #include "OptimizedMergeSort.h"
+#include "CountingSortAllInt.h"
 #include "BestNElements.h"
 #include "BestNAllInt.h"
 #include "BestNStlSort.h"
@@ -23,6 +24,8 @@ public:
     void RunCountingSortNegNumTest();
 
     void RunCountingSortPosNumTest();
+
+    void RunCountingSortAllIntTest();
 
     void RunQuickSortTest();
 
@@ -54,12 +57,13 @@ private:
     /* SORTING*/
     CountingSortNegNum cs_neg_num;
     CountingSortPosNum cs_pos_num;
+    CountingSortAllInt cs_all_int;
     QuickSort qs;
     BubbleSort bs;
     MergeSort ms;
     SedgewickMergeSort sms;
     OptimizedMergeSort oms;
-
+    
     /* SELECTING LARGEST OR SMALLEST ELEMENTS*/
 
     
